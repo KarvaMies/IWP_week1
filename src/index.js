@@ -12,6 +12,7 @@ document.getElementById("app").innerHTML = `
 const printButton = document.getElementById("my-button");
 const header = document.getElementById("header");
 const addDataButton = document.getElementById("add-data");
+const textarea = document.getElementById("input-data");
 
 printButton.addEventListener("click", function () {
   console.log("hello world");
@@ -21,6 +22,7 @@ printButton.addEventListener("click", function () {
 addDataButton.addEventListener("click", function () {
   const list = document.getElementById("data-list");
   let newListItem = document.createElement("li");
-  newListItem.innerText = "This is Data";
+  newListItem.innerText = textarea.value;
+  textarea.value = "";
   list.appendChild(newListItem);
 });
