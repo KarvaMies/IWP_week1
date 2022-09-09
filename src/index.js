@@ -10,6 +10,8 @@ document.getElementById("app").innerHTML = `
 `;
 
 const printButton = document.getElementById("my-button");
+const header = document.getElementById("header");
 printButton.addEventListener("click", function () {
   console.log("hello world");
+  header.innerText = "My notebook";
 });
