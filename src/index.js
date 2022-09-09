@@ -23,6 +23,6 @@ addDataButton.addEventListener("click", function () {
   const list = document.getElementById("data-list");
   let newListItem = document.createElement("li");
   newListItem.innerText = textarea.value;
-  textarea.value = "";
+  //textarea.value = "";
   list.appendChild(newListItem);
 });
